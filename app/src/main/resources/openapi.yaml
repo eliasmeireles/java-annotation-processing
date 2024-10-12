@@ -28,14 +28,26 @@ components:
       properties:
         statusCode:
           type: integer
-          format: int64
-          default: 0
+
         message:
           type: string
         timestamp:
           type: integer
+          format: int64
+        apiVersion:
+          $ref: "#/components/schemas/ApiVersion"
       required:
         - statusCode
         - timestamp
         - message
-
+        - apiVersion
+    ApiVersion:
+      type: object
+      properties:
+        version:
+          type: string
+        build:
+          type: string
+      required:
+        - version
+        - build

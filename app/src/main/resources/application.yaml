@@ -1,0 +1,7 @@
+server:
+  servlet:
+    context-path: /api/annotation/v1/
+
+spring:
+  application:
+    name: annotation
