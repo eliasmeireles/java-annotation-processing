@@ -1,4 +1,4 @@
-rootProject.name = "annotation"
+rootProject.name = "java-annotation-processing"
 
 buildscript {
     repositories {
