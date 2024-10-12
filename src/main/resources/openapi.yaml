@@ -1,0 +1,41 @@
+openapi: 3.0.3
+info:
+  title: Annotation Test
+  description: |-
+    Annotation Test
+  version: v0.0.1
+
+paths:
+  /check:
+    get:
+      tags:
+        - Annotation Test
+      operationId: getResponseTest
+      description: Get Api Response test
+      summary: Get Api Response test
+      responses:
+        200:
+          description: Operation successful
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiResponse"
+
+components:
+  schemas:
+    ApiResponse:
+      type: object
+      properties:
+        statusCode:
+          type: integer
+          format: int64
+          default: 0
+        message:
+          type: string
+        timestamp:
+          type: integer
+      required:
+        - statusCode
+        - timestamp
+        - message
+
