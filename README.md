@@ -170,7 +170,7 @@ spring:
 
 ## Example Usage
 
-To get a response from the API, send a GET request to `/api/annotation/v1/responseTest`.
+To get a response from the API, send a GET request to `/api/annotation/v1/check`.
 
 ### Example Request
 
