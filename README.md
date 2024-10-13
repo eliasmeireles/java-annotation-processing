@@ -1,4 +1,4 @@
-# Annotation Processing Example
+I# Annotation Processing Example
 
 ## Overview
 
@@ -175,7 +175,7 @@ To get a response from the API, send a GET request to `/api/annotation/v1/respon
 ### Example Request
 
 ```sh
-curl -X GET http://localhost:8080/api/annotation/v1/responseTest
+curl -X GET http://localhost:8080/api/annotation/v1/check
 ```
 
 ### Example Response
